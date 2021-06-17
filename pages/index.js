@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { styled } from "@stitches/react";
 import styles from "../styles/index";
+import flex from "../styles/layout/flex";
 
 export default function Home() {
   return (
@@ -88,6 +89,54 @@ export default function Home() {
             </h3>
             <hr style={{ color: styles.color.lime400, width: "100%" }} />
           </div>
+          <ProjectContainer>
+            <VideoWrapper>
+              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+                <source src="lunde_water.mp4" />
+              </StyledVideo>
+            </VideoWrapper>
+            <div>
+              <h3
+                style={{
+                  marginBottom: "0",
+                  color: styles.color.gray500,
+                  fontWeight: 500,
+                }}
+              >
+                Lunde Water
+              </h3>
+              <p
+                style={{
+                  color: styles.color.gray400,
+                  marginTop: styles.spacing.size2,
+                  fontSize: styles.typography.fontsize.textsm.size,
+                }}
+              >
+                Water Delivery application using an MERN stack with Typescript.
+                Created and implemented a custom algorithm to interact with T
+                Sheets API, that scans employee timesheets and creates a
+                calendar of available booking dates based on that data. Used
+                RESTful design principles for API communication. Created role
+                based user authentication for different authorization levels.{" "}
+              </p>
+            </div>
+            <div
+              style={{
+                width: styles.sizing.width.size44,
+                display: "flex",
+                justifyContent: "space-evenly",
+                alignSelf: "flex-end",
+              }}
+            >
+              {/* TODO: Add live link */}
+              {/* <Link href="https://jeff-brausam.github.io/mockup-online-store">
+                <a>
+                  <StyledProjectButton>Demo</StyledProjectButton>
+                </a>
+              </Link> */}
+            </div>
+          </ProjectContainer>
+          {/* Mockup */}
           <ProjectContainer>
             <StyledProjectImage
               src="/images/MockupScreenshot.jpg"
@@ -322,6 +371,18 @@ const ProjectContainer = styled("div", {
   justifyContent: "center",
   flexDirection: "column",
   boxShadow: styles.effect.boxshadow.shadowmd,
+});
+
+const VideoWrapper = styled("div", {
+  maxWidth: "100%",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+});
+
+const StyledVideo = styled("video", {
+  maxWidth: "100%",
+  flex: styles.layout.flex.basis.flex1,
 });
 
 const StyledProjectImage = styled(Image, {
