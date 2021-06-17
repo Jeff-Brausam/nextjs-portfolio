@@ -91,9 +91,8 @@ export default function Home() {
           </div>
           <ProjectContainer>
             <VideoWrapper>
-              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+              <StyledVideo playsInline loop autoPlay muted>
                 <source src="lunde_water.mp4" type="video/mp4" />
-                <source src="lunde_water.mp4" type="video/mov" />
               </StyledVideo>
             </VideoWrapper>
             <div>
@@ -140,9 +139,8 @@ export default function Home() {
           {/* Mockup */}
           <ProjectContainer>
             <VideoWrapper>
-              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+              <StyledVideo playsInline loop autoPlay muted>
                 <source src="mockup.mp4" type="video/mp4" />
-                <source src="mockup.mp4" type="video/mov" />
               </StyledVideo>
             </VideoWrapper>
             <div>
@@ -190,9 +188,8 @@ export default function Home() {
           {/* Calculator */}
           <ProjectContainer>
             <VideoWrapper>
-              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+              <StyledVideo playsInline loop autoPlay muted>
                 <source src="calculator.mp4" type="video/mp4" />
-                <source src="calculator.mp4" type="video/mov" />
               </StyledVideo>
             </VideoWrapper>
             <div>
@@ -238,12 +235,11 @@ export default function Home() {
           </ProjectContainer>
           {/* To-do List */}
           <ProjectContainer>
-            <VideoWrapper>
-              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
-                <source src="todolist.mp4" type="video/mp4" />
-                <source src="calculator.mp4" type="video/mov" />
-              </StyledVideo>
-            </VideoWrapper>
+            <StyledProjectImage
+              src="/images/ToDoListScreenshot.jpg"
+              width={1400}
+              height={720}
+            />
             <div>
               <h3
                 style={{
