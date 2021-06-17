@@ -92,7 +92,6 @@ export default function Home() {
             <VideoWrapper>
               <StyledVideo playsInline loop autoPlay muted>
                 <source src="lunde_water.mp4" type="video/mp4" />
-                <img src="lundeWaterScreenshot.png" />
               </StyledVideo>
             </VideoWrapper>
             <div>
