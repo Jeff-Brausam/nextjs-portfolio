@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { styled } from "@stitches/react";
 import styles from "../styles/index";
-import flex from "../styles/layout/flex";
 
 export default function Home() {
   return (
@@ -93,6 +92,7 @@ export default function Home() {
             <VideoWrapper>
               <StyledVideo playsInline loop autoPlay muted>
                 <source src="lunde_water.mp4" type="video/mp4" />
+                <img src="lundeWaterScreenshot.png" />
               </StyledVideo>
             </VideoWrapper>
             <div>
