@@ -92,7 +92,8 @@ export default function Home() {
           <ProjectContainer>
             <VideoWrapper>
               <StyledVideo playsInline={true} loop={true} autoPlay={true}>
-                <source src="lunde_water.mp4" />
+                <source src="lunde_water.mp4" type="video/mp4" />
+                <source src="lunde_water.mp4" type="video/mov" />
               </StyledVideo>
             </VideoWrapper>
             <div>
@@ -138,11 +139,12 @@ export default function Home() {
           </ProjectContainer>
           {/* Mockup */}
           <ProjectContainer>
-            <StyledProjectImage
-              src="/images/MockupScreenshot.jpg"
-              width={1400}
-              height={720}
-            />
+            <VideoWrapper>
+              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+                <source src="mockup.mp4" type="video/mp4" />
+                <source src="mockup.mp4" type="video/mov" />
+              </StyledVideo>
+            </VideoWrapper>
             <div>
               <h3
                 style={{
@@ -161,8 +163,8 @@ export default function Home() {
                 }}
               >
                 Mockup is an ecommerce store built with React for the frontend
-                and Firebase backend. React Router for routing, and Redux for
-                state management.{" "}
+                and Firebase for backend serverside needs. Used react router for
+                routing between pages, and Redux for state management.{" "}
               </p>
             </div>
             <div
@@ -187,11 +189,12 @@ export default function Home() {
           </ProjectContainer>
           {/* Calculator */}
           <ProjectContainer>
-            <StyledProjectImage
-              src="/images/CalculatorScreenshot.png"
-              width={1400}
-              height={720}
-            />
+            <VideoWrapper>
+              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+                <source src="calculator.mp4" type="video/mp4" />
+                <source src="calculator.mp4" type="video/mov" />
+              </StyledVideo>
+            </VideoWrapper>
             <div>
               <h3
                 style={{
@@ -235,11 +238,12 @@ export default function Home() {
           </ProjectContainer>
           {/* To-do List */}
           <ProjectContainer>
-            <StyledProjectImage
-              src="/images/ToDoListScreenshot.jpg"
-              width={1400}
-              height={720}
-            />
+            <VideoWrapper>
+              <StyledVideo playsInline={true} loop={true} autoPlay={true}>
+                <source src="todolist.mp4" type="video/mp4" />
+                <source src="calculator.mp4" type="video/mov" />
+              </StyledVideo>
+            </VideoWrapper>
             <div>
               <h3
                 style={{
