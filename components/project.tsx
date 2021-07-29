@@ -22,7 +22,7 @@ export interface ProjectType {
 const videoWrapper = (video: { src: string; type: string }) => {
   return (
     <VideoWrapper>
-      <StyledVideo playsInline loop autoPlay muted src={video.src}>
+      <StyledVideo controls playsInline loop autoPlay muted src={video.src}>
         {/* <source src={} type={video.type} /> */}
       </StyledVideo>
     </VideoWrapper>
