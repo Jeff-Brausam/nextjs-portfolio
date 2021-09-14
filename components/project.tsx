@@ -23,7 +23,7 @@ const videoWrapper = (video: { src: string; type: string }) => {
   return (
     <VideoWrapper>
       <StyledVideo controls playsInline loop autoPlay muted src={video.src}>
-        {/* <source src={} type={video.type} /> */}
+        <source src={video.src} type={video.type} />
       </StyledVideo>
     </VideoWrapper>
   );
