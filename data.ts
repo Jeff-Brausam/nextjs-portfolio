@@ -5,13 +5,27 @@ export const ProjectData: ProjectType[] = [
     title: "Lunde Water",
     description:
       "Water Delivery application using an MERN stack with Typescript. Created and implemented a custom algorithm to interact with T Sheets API, that scans employee timesheets and creates a calendar of available booking dates based on that data. Used RESTful design principles for API communication. Created role based user authentication for different authorization levels.",
-    video: { src: "lunde_water.mov", type: "video/mov" },
+    video: {
+      src: "lunde_water.mov",
+      type: "video/mov",
+      fallback: {
+        src: "lunde_water.mp4",
+        type: "video/mp4",
+      },
+    },
   },
   {
     title: "Mockup",
     description:
       "Mockup is an ecommerce store built with React for the frontend and Firebase for backend serverside needs. Used react router for routing between pages, and Redux for state management.",
-    video: { src: "mockup.mov", type: "video/mov" },
+    video: {
+      src: "mockup.mov",
+      type: "video/mov",
+      fallback: {
+        src: "mockup.mp4",
+        type: "video/mp4",
+      },
+    },
     link: {
       demo: "https://jeff-brausam.github.io/mockup-online-store",
       repo: "https://github.com/Jeff-Brausam/mockup-online-store",
@@ -21,7 +35,14 @@ export const ProjectData: ProjectType[] = [
     title: "Calculator",
     description:
       "An application built with Javascript using ES5 syntax, with the purpose of solving math equations with precision and ease.",
-    video: { src: "calculator.mov", type: "video/mov" },
+    video: {
+      src: "calculator.mov",
+      type: "video/mov",
+      fallback: {
+        src: "calculator.mp4",
+        type: "video/mp4",
+      },
+    },
     link: {
       demo: "https://jeff-brausam.github.io/calculator-app",
       repo: "https://github.com/Jeff-Brausam/calculator-app",

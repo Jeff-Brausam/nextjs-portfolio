@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Jeff Brausam Portfolio</title>
         <script src="ac_quicktime.js" type="text/javascript"></script>
-        <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+        {/* <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script> */}
         <meta name="description" content="My portfolio" />
       </Head>
       <Header />
