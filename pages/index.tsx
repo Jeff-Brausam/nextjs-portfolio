@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Jeff Brausam Portfolio</title>
-        <script src="ac_quicktime.js" type="text/javascript"></script>
+        {/* <script src="ac_quicktime.js" type="text/javascript"></script> */}
         <meta name="description" content="My portfolio" />
       </Head>
       <Header />
