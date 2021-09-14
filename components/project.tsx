@@ -23,12 +23,11 @@ const videoWrapper = (video: { src: string; type: string }) => {
   return (
     <VideoWrapper>
       <video
-        controls={true}
-        playsInline={true}
-        loop={true}
-        autoPlay={true}
-        muted={true}
-        src={video.src}
+        controls
+        playsInline
+        loop
+        autoPlay
+        muted
         width="100%"
         height="100%"
       >
