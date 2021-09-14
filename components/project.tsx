@@ -9,6 +9,10 @@ export interface ProjectType {
   video?: {
     src: string;
     type: string;
+    fallback: {
+      src: string;
+      type: string;
+    };
   };
   image?: {
     src: string;
@@ -19,7 +23,11 @@ export interface ProjectType {
   };
 }
 
-const videoWrapper = (video: { src: string; type: string }) => {
+const videoWrapper = (video: {
+  src: string;
+  type: string;
+  fallback: { src: string; type: string };
+}) => {
   return (
     <VideoWrapper>
       <video
@@ -32,8 +40,7 @@ const videoWrapper = (video: { src: string; type: string }) => {
         height="100%"
       >
         <source src={video.src} type="video/mp4" />
-        <source src={video.src} type={video.type} />
-        {/* {QT_WriteOBJECT(`${video.src}` , '320', '240', '')} */}
+        <source src={video.fallback.src} type={video.fallback.type} />
       </video>
     </VideoWrapper>
   );
