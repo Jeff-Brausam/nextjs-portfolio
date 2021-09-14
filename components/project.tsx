@@ -22,17 +22,20 @@ export interface ProjectType {
 const videoWrapper = (video: { src: string; type: string }) => {
   return (
     <VideoWrapper>
-      <StyledVideo
+      <video
         controls={true}
         playsInline={true}
         loop={true}
         autoPlay={true}
         muted={true}
         src={video.src}
+        width="100%"
+        height="100%"
       >
+        <source src={video.src} type="video/mp4" />
         <source src={video.src} type={video.type} />
         {/* {QT_WriteOBJECT(`${video.src}` , '320', '240', '')} */}
-      </StyledVideo>
+      </video>
     </VideoWrapper>
   );
 };
