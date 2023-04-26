@@ -84,11 +84,16 @@ export const Project: React.FC<ProjectType> = ({
 
 const ProjectContainer = styled("section", {
   padding: "1rem",
-  display: "flex",
-  margin: styles.spacing.size10,
-  alignItems: "center",
-  justifyContent: "center",
-  flexDirection: "column",
+  // margin: ".2rem",
+  marginBottom: "2rem",
+  flex: "45%",
+
+  boxSizing: "border-box",
+  // display: "flex",
+  // margin: styles.spacing.size10,
+  // alignItems: "center",
+  // justifyContent: "center",
+  // flexDirection: "column",
   boxShadow: styles.effect.boxshadow.shadowmd,
 });
 

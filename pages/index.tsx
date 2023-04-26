@@ -24,31 +24,51 @@ export default function Home() {
         }}
       >
         <Container>
-          <div>
+          <div
+            style={{
+              marginBottom: "2rem",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <h3
               style={{
                 fontSize: styles.typography.fontsize.text2xl.size,
                 fontWeight: 500,
                 marginTop: styles.spacing.size12,
-                marginBottom: styles.spacing.size4,
+                marginBottom: styles.spacing.size2,
               }}
             >
               Featured Work
             </h3>
-            <hr style={{ color: styles.color.lime400, width: "100%" }} />
-          </div>
-          {ProjectData.map((project, i) => {
-            return (
-              <Project
-                key={i}
-                title={project.title}
-                description={project.description}
-                image={project.image}
-                video={project.video}
-                link={project.link}
+            <div style={{ width: "50%" }}>
+              <hr
+                style={{
+                  backgroundColor: styles.color.gray300,
+                  height: ".1rem",
+                  border: "none",
+                  // borderRadius: "5px",
+                  width: "100%",
+                }}
               />
-            );
-          })}
+            </div>
+          </div>
+          <StyledGrid>
+            {ProjectData.map((project, i) => {
+              return (
+                <Project
+                  key={i}
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                  video={project.video}
+                  link={project.link}
+                />
+              );
+            })}
+          </StyledGrid>
         </Container>
       </main>
     </div>
@@ -56,9 +76,21 @@ export default function Home() {
 }
 
 const Container = styled("div", {
-  maxWidth: styles.layout.container.medium,
+  maxWidth: styles.layout.container.xLarge,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
+});
+
+const StyledGrid = styled("div", {
+  // display: "grid",
+  // gridTemplateColumns: "repeat(2, minmax(70%, auto))",
+  // width: "100%",
+  // maxWidth: "100%",
+  display: "flex",
+  flexWrap: "wrap",
+  columnGap: "10px",
+  // width: "100%",
+  // maxWidth: "100%",
 });

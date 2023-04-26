@@ -2,6 +2,21 @@ import { ProjectType } from "./components/project";
 
 export const ProjectData: ProjectType[] = [
   {
+    title: "Ecommerce Startup",
+    description: "Ecommerce website using NextJS and Sanity.IO.",
+    image: {
+      src: "/images/Ecommerce.png",
+    },
+    // video: {
+    //   src: "lunde_water.mov",
+    //   type: "video/mov",
+    //   fallback: {
+    //     src: "lunde_water.mp4",
+    //     type: "video/mp4",
+    //   },
+    // },
+  },
+  {
     title: "Lunde Water",
     description:
       "Water Delivery application using an MERN stack with Typescript. Created and implemented a custom algorithm to interact with T Sheets API, that scans employee timesheets and creates a calendar of available booking dates based on that data. Used RESTful design principles for API communication. Created role based user authentication for different authorization levels.",

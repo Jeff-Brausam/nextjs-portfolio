@@ -15,8 +15,8 @@ export const Header = () => {
         <StyledProfilePic
           src="/images/profilepic.jpg"
           alt="me"
-          width="100"
-          height="100"
+          width="120"
+          height="120"
         />
       </div>
       <div
@@ -27,10 +27,14 @@ export const Header = () => {
           alignItems: "center",
         }}
       >
-        <strong style={{ fontSize: "1.4rem", margin: 0 }}>Jeff Brausam</strong>
+        <strong
+          style={{ fontSize: "1.8rem", margin: 0, color: styles.color.black }}
+        >
+          Jeff Brausam
+        </strong>
         <p
           style={{
-            color: styles.color.gray500,
+            color: styles.color.gray800,
             margin: `${styles.spacing.size1} 0`,
           }}
         >
@@ -39,7 +43,7 @@ export const Header = () => {
         <div
           style={{
             margin: `${styles.spacing.size1} 0`,
-            color: styles.color.gray600,
+            color: styles.color.gray800,
           }}
         >
           <Link href="https://github.com/Jeff-Brausam" passHref>
@@ -63,10 +67,11 @@ export const Header = () => {
 };
 
 const StyledHeader = styled("header", {
-  background: styles.color.gray100,
+  background: "hsl(48, 50%, 96%)",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  // borderBottom: "4px solid hsl(161, 93%, 30%)",
 });
 
 const StyledProfilePic = styled(Image, {
