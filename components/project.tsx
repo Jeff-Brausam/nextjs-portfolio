@@ -93,7 +93,7 @@ const ProjectContainer = styled("section", {
   // margin: styles.spacing.size10,
   // alignItems: "center",
   // justifyContent: "center",
-  // flexDirection: "column",
+
   boxShadow: styles.effect.boxshadow.shadowmd,
 });
 
