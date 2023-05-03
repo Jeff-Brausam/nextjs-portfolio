@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Header } from "../components/header";
 import { Project } from "../components/project";
+import { Graphic } from "../components/graphic";
 import { styled } from "@stitches/react";
 import styles from "../styles/index";
-import { ProjectData } from "../data";
+import { GraphicData, ProjectData } from "../data";
 
 export default function Home() {
   return (
@@ -41,7 +42,50 @@ export default function Home() {
                 marginBottom: styles.spacing.size2,
               }}
             >
-              Featured Work
+              Graphic Design
+            </h3>
+            <div style={{ width: "50%" }}>
+              <hr
+                style={{
+                  backgroundColor: styles.color.gray300,
+                  height: ".1rem",
+                  border: "none",
+                  // borderRadius: "5px",
+                  width: "100%",
+                }}
+              />
+            </div>
+          </div>
+          <StyledGraphicGrid>
+            {GraphicData.map((project, i) => {
+              return (
+                <Graphic
+                  key={i}
+                  title={project.title}
+                  description={project.description}
+                  image={project.image}
+                />
+              );
+            })}
+          </StyledGraphicGrid>
+          <div
+            style={{
+              marginBottom: "2rem",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: styles.typography.fontsize.text2xl.size,
+                fontWeight: 500,
+                marginTop: styles.spacing.size12,
+                marginBottom: styles.spacing.size2,
+              }}
+            >
+              Websites
             </h3>
             <div style={{ width: "50%" }}>
               <hr
@@ -91,6 +135,19 @@ const StyledGrid = styled("div", {
   display: "flex",
   flexWrap: "wrap",
   columnGap: "10px",
+  // width: "100%",
+  // maxWidth: "100%",
+});
+
+const StyledGraphicGrid = styled("div", {
+  // display: "grid",
+  // gridTemplateColumns: "repeat(2, minmax(70%, auto))",
+  // width: "100%",
+  // maxWidth: "100%",
+  display: "flex",
+  flexDirection: "column",
+  // flexWrap: "wrap",
+  // columnGap: "10px",
   // width: "100%",
   // maxWidth: "100%",
 });

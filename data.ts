@@ -1,4 +1,54 @@
+import { GraphicType } from "./components/graphic";
 import { ProjectType } from "./components/project";
+
+export const GraphicData: GraphicType[] = [
+  // {
+  //   title: "Reflect",
+  //   description:
+  //     "Artwork built with Adobe Illustrator with the concept of wireframe design.",
+  //   image: {
+  //     src: "/images/LogoDesign2.png",
+  //     width: "2481",
+  //     height: "3508",
+  //   },
+  // },
+  {
+    title: "Logo Work",
+    description: "Logo design with Adobe Illustrator.",
+    image: {
+      src: "/images/LogoWork1.jpg",
+      width: "912",
+      height: "758",
+    },
+  },
+  {
+    title: "Travel Banner Ad",
+    description: "Travel Banner made in Adobe Illustrator",
+    image: {
+      src: "/images/TravelBannerAd1.png",
+      width: "9667",
+      height: "3125",
+    },
+  },
+  {
+    title: "Travel Brochure Example",
+    description: "Travel Brochure made in Adobe Illustrator",
+    image: {
+      src: "/images/TravelBrochure1.png",
+      width: "9667",
+      height: "6250",
+    },
+  },
+  {
+    title: "Travel Brochure Example",
+    description: "Travel Brochure made in Adobe Illustrator",
+    image: {
+      src: "/images/TravelBrochure2.png",
+      width: "9667",
+      height: "6250",
+    },
+  },
+];
 
 export const ProjectData: ProjectType[] = [
   {
@@ -7,14 +57,6 @@ export const ProjectData: ProjectType[] = [
     image: {
       src: "/images/Ecommerce.png",
     },
-    // video: {
-    //   src: "lunde_water.mov",
-    //   type: "video/mov",
-    //   fallback: {
-    //     src: "lunde_water.mp4",
-    //     type: "video/mp4",
-    //   },
-    // },
   },
   {
     title: "Lunde Water",
@@ -23,14 +65,6 @@ export const ProjectData: ProjectType[] = [
     image: {
       src: "/images/lundewater.gif",
     },
-    // video: {
-    //   src: "lunde_water.mov",
-    //   type: "video/mov",
-    //   fallback: {
-    //     src: "lunde_water.mp4",
-    //     type: "video/mp4",
-    //   },
-    // },
   },
   {
     title: "Mockup",
@@ -39,14 +73,6 @@ export const ProjectData: ProjectType[] = [
     image: {
       src: "/images/mockup.gif",
     },
-    // video: {
-    //   src: "mockup.mov",
-    //   type: "video/mov",
-    //   fallback: {
-    //     src: "mockup.mp4",
-    //     type: "video/mp4",
-    //   },
-    // },
     link: {
       demo: "https://jeff-brausam.github.io/mockup-online-store",
       repo: "https://github.com/Jeff-Brausam/mockup-online-store",
