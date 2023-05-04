@@ -46,6 +46,8 @@ const ProjectContainer = styled("section", {
   // margin: ".2rem",
   marginBottom: "2rem",
   flex: "100%",
+  display: "flex",
+  justifyContent: "center",
 
   boxSizing: "border-box",
   // display: "flex",
@@ -71,20 +73,6 @@ const StyledProjectImage = styled(Image, {
   border: "1px solid red",
   margin: styles.spacing.size8,
   boxShadow: styles.effect.boxshadow.shadowmd,
-});
-
-const StyledProjectButton = styled("button", {
-  width: styles.sizing.width.size14,
-  height: styles.sizing.height.size6,
-  borderRadius: "25px",
-  border: `1px solid ${styles.color.gray500}`,
-  background: "white",
-  color: styles.color.gray500,
-  "&:hover": {
-    color: styles.color.lime600,
-    border: `1px solid ${styles.color.lime600}`,
-    cursor: "pointer",
-  },
 });
 
 const Title = styled("h3", {

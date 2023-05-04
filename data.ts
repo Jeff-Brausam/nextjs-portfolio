@@ -2,30 +2,30 @@ import { GraphicType } from "./components/graphic";
 import { ProjectType } from "./components/project";
 
 export const GraphicData: GraphicType[] = [
-  // {
-  //   title: "Reflect",
-  //   description:
-  //     "Artwork built with Adobe Illustrator with the concept of wireframe design.",
-  //   image: {
-  //     src: "/images/LogoDesign2.png",
-  //     width: "2481",
-  //     height: "3508",
-  //   },
-  // },
+  {
+    title: "Reflect",
+    description:
+      "Artwork built with Adobe Illustrator with the concept of wireframe designs and repetition.",
+    image: {
+      src: "/images/LogoDesign2.JPG",
+      width: "562",
+      height: "765",
+    },
+  },
   {
     title: "Logo Work",
     description: "Logo design with Adobe Illustrator.",
     image: {
       src: "/images/LogoWork1.jpg",
-      width: "912",
-      height: "758",
+      width: "750",
+      height: "700",
     },
   },
   {
     title: "Travel Banner Ad",
     description: "Travel Banner made in Adobe Illustrator",
     image: {
-      src: "/images/TravelBannerAd1.png",
+      src: "/images/TravelBannerAd1.jpg",
       width: "9667",
       height: "3125",
     },
@@ -34,7 +34,7 @@ export const GraphicData: GraphicType[] = [
     title: "Travel Brochure Example",
     description: "Travel Brochure made in Adobe Illustrator",
     image: {
-      src: "/images/TravelBrochure1.png",
+      src: "/images/TravelBrochure1.jpg",
       width: "9667",
       height: "6250",
     },
@@ -43,7 +43,7 @@ export const GraphicData: GraphicType[] = [
     title: "Travel Brochure Example",
     description: "Travel Brochure made in Adobe Illustrator",
     image: {
-      src: "/images/TravelBrochure2.png",
+      src: "/images/TravelBrochure2.jpg",
       width: "9667",
       height: "6250",
     },

@@ -38,7 +38,7 @@ export const Header = () => {
             margin: `${styles.spacing.size1} 0`,
           }}
         >
-          Software Engineer
+          Graphic Designer / Software Engineer
         </p>
         <div
           style={{
