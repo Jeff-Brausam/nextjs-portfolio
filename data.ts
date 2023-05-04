@@ -17,8 +17,8 @@ export const GraphicData: GraphicType[] = [
     description: "Logo design with Adobe Illustrator.",
     image: {
       src: "/images/LogoWork.jpg",
-      width: "750",
-      height: "700",
+      width: "450",
+      height: "450",
     },
   },
   {
