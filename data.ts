@@ -3,25 +3,6 @@ import { ProjectType } from "./components/project";
 
 export const GraphicData: GraphicType[] = [
   {
-    title: "Reflect",
-    description:
-      "Artwork built with Adobe Illustrator with the concept of wireframe designs and repetition.",
-    image: {
-      src: "/images/LogoDesign2.JPG",
-      width: "562",
-      height: "765",
-    },
-  },
-  {
-    title: "Logo Work",
-    description: "Logo design with Adobe Illustrator.",
-    image: {
-      src: "/images/LogoWork.jpg",
-      width: "450",
-      height: "450",
-    },
-  },
-  {
     title: "Travel Banner Ad",
     description: "Travel Banner made in Adobe Illustrator",
     image: {
@@ -46,6 +27,43 @@ export const GraphicData: GraphicType[] = [
       src: "/images/TravelBrochure2.jpg",
       width: "9667",
       height: "6250",
+    },
+  },
+  {
+    title: "Reflect",
+    description:
+      "Artwork built with Adobe Illustrator with the concept of wireframe designs and repetition.",
+    image: {
+      src: "/images/LogoDesign2.JPG",
+      width: "562",
+      height: "765",
+    },
+  },
+  {
+    title: "Logo Work",
+    description: "Logo design with Adobe Illustrator.",
+    image: {
+      src: "/images/LogoWork.jpg",
+      width: "450",
+      height: "450",
+    },
+  },
+  {
+    title: "Lunar Tide",
+    description: "Logo design with Adobe Illustrator.",
+    image: {
+      src: "/images/lunartide-min.png",
+      width: "1920",
+      height: "1080",
+    },
+  },
+  {
+    title: "3d Cube",
+    description: "3D Cube made with Blender.",
+    image: {
+      src: "/images/cube-min.png",
+      width: "1920",
+      height: "1080",
     },
   },
 ];
