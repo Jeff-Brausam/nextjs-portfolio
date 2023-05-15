@@ -50,7 +50,7 @@ export const GraphicData: GraphicType[] = [
   },
   {
     title: "Lunar Tide",
-    description: "Logo design with Adobe Illustrator.",
+    description: "3D artwork made with Blender.",
     image: {
       src: "/images/lunartide-min.png",
       width: "1920",
